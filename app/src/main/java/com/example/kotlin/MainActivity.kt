@@ -2,10 +2,20 @@ package com.example.kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        touhBtn.setOnClickListener {
+
+            //tohcBtn이 눌리면 실행
+
+            Toast.makeText(this, "터치버튼을 눟렀습니다", Toast.LENGTH_SHORT).show()
+        }
     }
 }
