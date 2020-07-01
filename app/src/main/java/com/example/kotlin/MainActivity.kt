@@ -24,6 +24,29 @@ class MainActivity : AppCompatActivity() {
 
             Log.e("메인화면", "에러 로그 찍어보기")
 
+            secondBtn.setOnClickListener {
+                Toast.makeText(this, "둘째 버튼 눌림", Toast.LENGTH_SHORT).show()
+                Log.d("메인화면", "둘째 버튼 눌림")
+
+            }
+
         }
+        // 토스트띄우기 버튼이 눌리면
+        showToastBtu.setOnClickListener {
+            //EditText에 입력된 내용을 받자
+            //대입값이 String이면 변수 타입도 자동으로 String으로 결정됨.
+            val inputContent = inputcontentEdt.text.toString()
+
+//            val input : String
+//            input = "테스트"
+//            input = "테스트2"
+
+
+
+
+            //10은 정수. 정수를 num1에 대입.=> num1은 Int로 결정
+            // (예시)val num1 = 10
+        }
+
     }
 }
